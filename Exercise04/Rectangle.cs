@@ -9,7 +9,7 @@ namespace Exercise04
         public double Width { get; set; }
         public double Height { get; set; }
 
-        public override double Area => throw new NotImplementedException();
+       
 
         public Rectangle(double width, double height)
         {
