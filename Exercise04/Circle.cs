@@ -14,7 +14,7 @@ namespace Exercise04
         {
             this.Radius = radius;
         }
-        public override double Area
+        public override double Area()
         {
             return PI * Radius * Radius ;
         }

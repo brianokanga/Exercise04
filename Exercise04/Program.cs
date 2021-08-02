@@ -22,6 +22,7 @@ namespace Exercise04
                 new Rectangle { Colour = "Blue", Height = 45.0, Width = 18.0 }
             };
 
+
             var serializerXml = new XmlSerializer(typeof(List<Shape>));
             FileStream fileXml = File.Create(pathXml);
             serializerXml.Serialize(fileXml, listOfShapes);
@@ -32,6 +33,8 @@ namespace Exercise04
             fileXml.Dispose();
             foreach (Shape item in loadedShapesXml)
                 Console.WriteLine($"{item.GetType().Name} is {Shape.Colour} {item.Area}");
+
+
 
         }
 

@@ -1,4 +1,4 @@
-﻿using Aspose.Pdf.Drawing;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace Exercise04
 {
-    [XmlInclude(typeof(Circle))]
+    [XmlInclude(typeof(Cirle))]
     [XmlInclude(typeof(Rectangle))]
     public abstract class Shape
     {
